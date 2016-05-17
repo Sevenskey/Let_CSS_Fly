@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<style>
+	html, body {
+		width: 100%;
+		height: 100%;
+		box-sizing: border-box;
+	}
+	body {
+		margin: 0;
+		transition: background 1s;
+		background-size: cover;
+	}
+	.class1 {
+		background-color: #ccc;
+	}
+	.class2 {
+		background-color: #000;
+	}
+	.class3 {
+		background-image: url(http://photo1.fanfou.com/v1/mss_3d027b52ec5a4d589e68050845611e68/ff/n0/0c/hd/gs_500109.jpg@596w_1l.jpg);
+	}
+	.class4 {
+		background-image: url(http://photo1.fanfou.com/v1/mss_3d027b52ec5a4d589e68050845611e68/ff/n0/0c/av/v1_129141.jpg@596w_1l.jpg);
+	}
+	
+	</style>
+</head>
+<body>
+	<!-- 测试CSS3背景渐变效果 -->
+	<button onclick="a('class2')">to black</button>
+	<button onclick="a('class1')">to grey</button>
+	<button onclick="a('class3')">to wang</button>
+	<button onclick="a('class4')">to miao</button>
+	<script>
+	function a(a) {
+		document.getElementsByTagName('body')[0].setAttribute('class', a);
+	}
+
+	</script>
+</body>
+</html>
