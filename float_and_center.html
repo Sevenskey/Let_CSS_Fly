@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>浮动和居中</title>
+	<style>
+	.div1 {
+		float: left;
+		width: 400px;
+		height: 100px;
+		background: #ccc;
+	}
+	.div2 {
+		width: 400px;
+		height: 100px;
+		background: #aaa;
+		margin: auto;
+		padding: 100px;
+	}
+	</style>
+</head>
+<body>
+	<!-- 浮动的div脱离了文档流，不影响未浮动的div在body中居中。 -->
+	<div class="div1"></div>
+	<div class="div2"></div>
+</body>
+</html>
