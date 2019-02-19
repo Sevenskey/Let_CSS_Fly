@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title></title>
+  <style>
+.red-border {
+  border: 1px solid red;
+}
+.green-border {
+  border: 1px solid green;
+}
+.blue-border {
+  border: 1px solid blue;
+}
+.box {
+  background-color: rgba(50, 50, 50, .2);
+}
+.ibox {
+  background-color: yellow;
+}
+.clear-float {
+  overflow: hidden;
+}
+.float-box {
+  float: left;
+}
+  </style>
+</head>
+<body>
+  <div class="box red-border" style="width: 100px; height: 100px;"></div>
+  <div class="box red-border" style="">
+    <div class="box blue-border" style="width: 150px; height: 50px;"></div>
+    <div class="float-box box blue-border" style="width: 50px; height: 70px;">
+      浮动元素
+    </div>
+    <div class="box blue-border ibox" style="width: 200px; height: 30px;">
+    文字文字文字文字
+    </div>
+    <span>这是一个span</span>
+  </div>
+  <div class="box red-border" style="width: 300px; height: 100px">
+    <div class="float-box box blue-border" style="width: 60px; height: 60px;">
+      浮动元素
+    </div>
+  </div>
+  <div class="float-box box red-border" style="width: 60px; height: 60px;">
+    浮动元素
+  </div>
+  <div class="box red-border" style="width: 300px; height: 100px">
+    <div class="float-box box blue-border" style="width: 60px; height: 60px;">
+      浮动元素
+    </div>
+  </div>
+</body>
+</html>
